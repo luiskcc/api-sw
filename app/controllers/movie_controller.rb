@@ -1,4 +1,4 @@
-class MoviesController < ApplicationController
+class MovieController < ApplicationController
   def index 
     render json: "Hello World"
   end
