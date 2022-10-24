@@ -15,10 +15,10 @@ end
 render json: data
 end
 
-  def show
-    
+def show
+movie_id = params[:id]
+data = FetchDataFromSwapi.new('films', movie_id).call
 
-    movie_id = params [:id]
-    render json: "Example of a movie with id #{movie_id}"
-  end
+render json: data
+end
 end
